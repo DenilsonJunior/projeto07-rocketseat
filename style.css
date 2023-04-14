@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%; /*10px*/
+    --color01: #7158EF;
+    --color02: #090039;
+    --color03: #0A0039A3;
+    --shadow: 0.3rem 0.3rem 0.3rem #0003;
+}
+
+body {
+    background-color: #ECE9FD;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.view-control {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+    padding: 6rem 2.3rem;
+}
+
+h4 {
+    color: var(--color01);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 3px;
+}
+
+h1 {
+    color: var(--color02);
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    margin: 1.7rem 0 0;
+    text-shadow: var(--shadow);
+}
+
+h1 + p {
+    color: var(--color03);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin: 1.5rem 0 3.2rem;
+}
+
+a {
+    color: var(--color02);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    transition-duration: .3s;
+}
+
+a:hover {
+    font-weight: 800;
+    transition-duration: .3s;
+}
+
+ul {
+    padding: 7.2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+ul li b {
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8rem;
+    width: 4.7rem;
+    margin: 0 2.6rem 0 0;
+    text-align: center;
+    text-shadow: var(--shadow);
+}
+
+ul li {
+    list-style: none;
+    color: var(--color02);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .view-control {
+        padding: 2rem 2.3rem;
+        max-width: 102.1rem;
+        display: flex;
+        gap: 11.5em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .view-control section {
+        max-width: 484px;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4.8rem;
+    }
+
+    h1 + p {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+    }
+
+    a {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    ul li b {
+        font-size: 7.2rem;
+        line-height: 8rem;
+    }
+
+    ul li {
+        font-size: 2.4rem;
+        line-height: 3.2rem; 
+    }
+}
